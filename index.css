@@ -2,6 +2,36 @@
   margin-bottom: 20vh;
 }
 
+.row {
+  margin-bottom: 15vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.image-col {
+  text-align: center;
+}
+
 .description {
+  margin-top: 100px;
   margin-bottom: 50px;
+}
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid #aaa;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: center;
+  height: 40px;
+  padding: 5px;
+}
+
+th {
+  background-color: #ddd;
 }
