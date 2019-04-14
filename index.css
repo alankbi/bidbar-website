@@ -75,13 +75,17 @@ div[class="mce_inline_error"] {
 }
 
 .row {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   margin-left: 5vw;
   margin-right: 5vw;
 }
 
 .image-col {
   text-align: center;
+}
+
+.section {
+  margin-bottom: 100px;
 }
 
 .description {
