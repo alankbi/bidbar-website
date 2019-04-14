@@ -18,23 +18,23 @@
         <script src="index.js"></script>
     </head>
     <body>
+      <div class="top"></div>
+      <!-- Header -->
+      <div class="navbar navbar-expand-md">
+        <a class="navbar-brand" href="/">Bidbar</a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
       <div id="container" class="container mb-3">
-        <!-- Header -->
-        <div class="navbar navbar-expand-md">
-          <a class="navbar-brand" href="/">Bidbar</a>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-
         <!-- Description and image -->
-        <div class="row">
+        <div class="row first-row">
           <div class="col">
             <div class="description">
               <h1>Bidbar</h1>
-              <p>Do some cool shit. </p>
+              <p class="main-text">A menu bar app that allows you to run custom scripts with just a few clicks.</p>
             </div>
             <!-- Begin Mailchimp Signup Form -->
             <div id="mc_embed_signup">
@@ -42,10 +42,9 @@
                 method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" 
                 target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
-                  <h2>Subscribe</h2>
+                  <p class="main-text">Notify me when Bidbar is released:</p>
                   <div class="mc-field-group">
-                    <label for="mce-EMAIL">Email</label>
-                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                    <input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL">
                   </div>
                   <div id="mce-responses" class="clear">
                     <div class="response" id="mce-error-response" style="display:none"></div>
@@ -67,14 +66,14 @@
             <!--End mc_embed_signup-->
           </div>
           <div class="col image-col">
-            <img src="./assets/bidbar_image.png" alt="Image of Bidbar" width="70%">
+            <img src="./assets/bidbar_image.png" alt="Image of Bidbar" width="450px">
           </div>
         </div>
         
         <!-- Detailed description -->
         <div class="row">
           <div class="col image-col">
-            <img src="./assets/bidbar_image.png" alt="Image of Bidbar" width="40%">
+            <img src="./assets/bidbar_image.png" alt="Image of Bidbar" width="350px">
           </div>
           <div class="col">
             <div class="description">
@@ -95,7 +94,7 @@
             </div>
           </div>
           <div class="col image-col">
-            <img src="./assets/bidbar_image.png" alt="Image of Bidbar" width="40%">
+            <img src="./assets/bidbar_image.png" alt="Image of Bidbar" width="350px">
           </div>
         </div>
 

@@ -16,19 +16,32 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans:300,400" rel="stylesheet">
     <script src="index.js"></script>
+    <style>
+      div[class="mce_inline_error"] {
+        color: #333 !important;
+      }
+
+      .button {
+        color: white !important;
+        background: linear-gradient(65deg, rgb(18, 116, 237) 0%, rgb(73, 146, 240) 100%) !important;
+      }
+
+      .button:hover {
+        background: linear-gradient(65deg, rgb(25, 122, 242) 0%, rgb(80, 151, 245) 100%) !important;
+      }
+    </style>
   </head>
   <body>
+    <!-- Header -->
+    <div class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="/">Bidbar</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
     <div id="container" class="container">
-      <!-- Header -->
-      <div class="navbar navbar-expand-md">
-        <a class="navbar-brand" href="/">Bidbar</a>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-
       <div class="contact mb-5">
         <h1 class="text-center mb-5">Contact</h1>
         <p>Hello! My name is Alan, and I'm an avid computer science student. If you 
@@ -45,10 +58,9 @@
           method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" 
           target="_blank" novalidate>
           <div id="mc_embed_signup_scroll">
-            <h2>Subscribe</h2>
+            <p class="main-text">Subscribe to the mailing list:</p>
             <div class="mc-field-group">
-              <label for="mce-EMAIL">Email</label>
-              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+              <input type="email" value="" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL">
             </div>
             <div id="mce-responses" class="clear">
               <div class="response" id="mce-error-response" style="display:none"></div>
