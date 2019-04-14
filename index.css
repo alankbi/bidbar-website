@@ -9,6 +9,7 @@
 
 body {
   background-color: var(--background-color);
+  /* TODO: font */
 }
 
 a {
@@ -21,6 +22,11 @@ a {
   width: 100%;
   padding: 12px 10vw;
   box-shadow: 0 2px 8px rgba(32,43,54,0.32);
+}
+
+.logo {
+  margin-top: -5px;
+  margin-right: 2px;
 }
 
 .top {
