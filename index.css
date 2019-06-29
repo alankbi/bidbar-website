@@ -1,5 +1,6 @@
 :root {
   --blue: rgb(18, 116, 237);
+  --purple: #6954F7;
   --background-color: #fff;
 }
 
@@ -22,6 +23,13 @@ a {
   width: 100%;
   padding: 12px 10vw;
   box-shadow: 0 2px 8px rgba(32,43,54,0.32);
+}
+
+.navbar-brand {
+  background: -webkit-linear-gradient(var(--blue), var(--purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .logo {
@@ -66,7 +74,7 @@ a {
   margin: 8px 0 20px 0;
   cursor: pointer;
   border: none;
-  background: linear-gradient(65deg, #6954F7 -25%, #9485F9 100%);
+  background: linear-gradient(65deg, var(--purple) -25%, #9485F9 100%);
   box-shadow: 0 8px 24px rgba(32,43,54,0.42);
   width: 120px;
   height: 45px;
