@@ -2,9 +2,9 @@
 <channel>
 <title>Bidbar</title>
 <item>
-<title>1.0</title>
-<pubDate>Thu, 25 Jul 2019 17:04:12 -0700</pubDate>
+<title>1.0.1</title>
+<pubDate>Sat, 27 Jul 2019 00:05:26 -0700</pubDate>
 <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
-<enclosure url="Bidbar.dmg" sparkle:version="1" sparkle:shortVersionString="1.0" length="5960148" type="application/octet-stream"/>
+<enclosure url="https://www.getbidbar.com/release/Bidbar.zip" sparkle:version="2" sparkle:shortVersionString="1.0.1" length="6104365" type="application/octet-stream" sparkle:edSignature="otDkXp+SHbGUW8wdok2Fs1wExcTowKTyISXMpuql3n/aDogZQ5rpUkeZbSjqW+GAt3CkibZnY/afPCOO9pMYBQ=="/>
 </item>
 </channel></rss>
