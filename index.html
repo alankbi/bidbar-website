@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Bidbar - Save and run Terminal commands from the menu bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138416962-1"></script>
     <script>
@@ -32,7 +33,7 @@
     <div id="container" class="container mb-3">
       <!-- Description and image -->
       <div class="row first-row">
-        <div class="col">
+        <div class="col" id="top-text">
           <div class="description">
             <h1>Bidbar</h1>
             <p class="main-text">Save Terminal commands in the Mac menu bar and run them with keyboard shortcuts.</p>
@@ -66,7 +67,7 @@
             ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
           <!--End mc_embed_signup-->
         </div>
-        <div class="col image-col">
+        <div class="col image-col" id="top-image">
           <img src="./assets/bidbar_image.png" alt="Image of Bidbar" width="450px">
         </div>
       </div>
@@ -81,12 +82,12 @@
         <img src="./assets/bidbar_desktop.png" alt="Image of Bidbar" width="80%" class="mac-shadow">
       </div>
 
-      <div class="row">
-        <div class="col image-col">
-          <img src="./assets/bidbar_notification.png" alt="Notification" width="350px">
-          <img src="./assets/bidbar_output.png" alt="Notification" width="400px">
+      <div class="row output-row">
+        <div class="col image-col output-col-1">
+          <img class="output-img" src="./assets/bidbar_notification.png" alt="Notification" width="350px">
+          <img class="output-img" src="./assets/bidbar_output.png" alt="Notification" width="400px">
         </div>
-        <div class="col description">
+        <div class="col description output-col-2">
           <h3>View the output of your commands</h3>
           <p>When your command finishes running, click the notification to view the
             output in a clean, minimal window.</p>
@@ -99,7 +100,7 @@
           <h3>Run your commands with keyboard shortcuts</h3>
           <p>Use keyboard shortcuts <code>Shift+CMD+ALT+#</code> to quickly run commands without using a mouse.</p>
         </div>
-        <img src="./assets/keyboard.png" alt="Image of Bidbar" width="50%" class="mac-shadow-small">
+        <img src="./assets/keyboard.png" alt="Image of Bidbar" width="50%" class="mac-shadow-small keyboard">
       </div>
       <a style="color: white;" href="./release/Bidbar.dmg" download>_</a>
 
