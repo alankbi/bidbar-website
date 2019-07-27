@@ -5,6 +5,15 @@
 <title>1.0</title>
 <pubDate>Thu, 25 Jul 2019 17:04:12 -0700</pubDate>
 <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
-<enclosure url="Bidbar.dmg" sparkle:version="1" sparkle:shortVersionString="1.0" length="5960148" type="application/octet-stream"/>
+<enclosure url="Bidbar.dmg" sparkle:version="1" sparkle:shortVersionString="1.0" length="5956527" type="application/octet-stream"/>
 </item>
+<item>
+<title>1.0.1</title>
+<pubDate>Fri, 26 Jul 2019 18:21:27 -0700</pubDate>
+<sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
+<enclosure url="https://www.getbidbar.com/release/Bidbar.dmg" sparkle:version="2" sparkle:shortVersionString="1.0.1" length="5956527" type="application/octet-stream" sparkle:edSignature="RlnnMn6qpa1m6HmFyRbEB7VgwDMEWS74PFxICN33uAdFZ2uzzK7cvfxIpayRwsgQyjxD50yPdlUy1Y1jj+HLCA=="/>
+<sparkle:deltas>
+<enclosure url="https://www.getbidbar.com/release/Bidbar2-1.delta" sparkle:version="2" sparkle:shortVersionString="1.0.1" sparkle:deltaFrom="1" length="57791" type="application/octet-stream" sparkle:edSignature="OMQulKhQ9VfzZmjA8pN5Ej/cM5jg7T3lyQ0/ZEcOMcpXyxgJ8GFXUEJCxbBp+2wsueEk4VuARL+xiIxOTecSAw=="/></sparkle:deltas>
+</item>
+
 </channel></rss>
