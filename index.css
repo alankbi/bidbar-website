@@ -103,11 +103,12 @@ body {
 
 .contact-container {
   width: 70vw;
+  margin-top: -60px;
 }
 
 .contact-subscribe-form {
   text-align: center;
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 }
 
 a {
@@ -120,6 +121,10 @@ a {
   width: 100%;
   padding: 12px 10vw;
   box-shadow: 0 2px 8px rgba(32,43,54,0.32);
+}
+
+.no-shadow {
+  box-shadow: none !important;
 }
 
 .navbar-brand {
