@@ -1,3 +1,31 @@
+@media only screen and (max-width: 525px) and (min-width: 401px) {
+  .example-item {
+    width: 250px !important;
+  }
+  
+  .example-header {
+    margin-bottom: 50px !important;
+  }
+
+  .example-header-text {
+    font-size: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .example-item {
+    width: 200px !important;
+  }
+
+  .example-header {
+    margin-bottom: 30px !important;
+  }
+
+  .example-header-text {
+    font-size: 40px !important;
+  }
+}
+
 .navbar {
   margin-bottom: 120px;
 }
@@ -14,13 +42,13 @@
 }
 
 .example-header {
-  margin-bottom: 80px !important;
+  margin-bottom: 80px;
   text-align: center;
   justify-content: center;
 }
 
 .example-header-text {
-  font-size: 70px !important;
+  font-size: 70px;
 }
 
 .col {

@@ -36,12 +36,19 @@
     </div>
 
     <div id="container" class="container mb-3">
-      <div class="row example-header mb-5">
-        <h1 class="text-center example-header-text mb-5">Examples &#128296</h1>
+      <div class="row example-header">
+        <p class="text-center example-header-text mb-5">Examples &#128296</p>
       </div>
 
       <div class="row">
         <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <div class="example-item">
+            <p class="example-text example-text-header">Save hard-to-remember commands</p>
+            <p class="example-text example-text-body">git reset --soft HEAD~1
+              <br>grep -rnw "keyword" ./directory
+            </p>
+          </div>
+          
           <div class="example-item">
             <p class="example-text example-text-header">Toggle dark mode &#9899</p>
             <p class="example-text example-text-body">osascript -e 'tell application "System Events" to tell appearance 
@@ -78,45 +85,79 @@
               <br>{ echo Goals for today; cat goals.txt; } | say
             </p>
           </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Modify default Mac settings</p>
+            <p class="example-text example-text-body">defaults write com.apple.finder AppleShowAllFiles -bool TRUE
+              <br>defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 30
+              <br>defaults write -g com.apple.springing.delay -float 1.0
+            </p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Keep your computer running &#9749</p>
+            <p class="example-text example-text-body">caffeinate -t 3600
+              <br># Commands automatically time out after 1 hour
+            </p>
+          </div>
         </div>
 
         <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
-            <div class="example-item">
-              <p class="example-text example-text-header">Run scripts in various languages</p>
-              <p class="example-text example-text-body">python path/to/file.py
-                <br>sh shell_script.sh
-              </p>
-            </div>
+          <div class="example-item">
+            <p class="example-text example-text-header">Do git operations &#129425</p>
+            <p class="example-text example-text-body">cd path/to/project
+              <br>git pull
+              <br>git commit -am "Commit my awesome changes"
+            </p>
+          </div>
+          
+          <div class="example-item">
+            <p class="example-text example-text-header">Run scripts in various languages</p>
+            <p class="example-text example-text-body">python path/to/file.py
+              <br>sh shell_script.sh
+            </p>
+          </div>
 
-            <div class="example-item">
-              <p class="example-text example-text-header">Do git operations &#129425</p>
-              <p class="example-text example-text-body">cd path/to/project
-                <br>git pull
-                <br>git commit -am "Commit my awesome changes"
-              </p>
-            </div>
+          <div class="example-item">
+            <p class="example-text example-text-header">Take screenshots &#128247</p>
+            <p class="example-text example-text-body">screencapture -x -R0,0,640,320 ~/Pictures/Screenshot.png</p>
+          </div>
 
-            <div class="example-item">
-              <p class="example-text example-text-header">Run and test your projects</p>
-              <p class="example-text example-text-body">cd path/to/project
-                <br>npm start
-                <br>npm test
-              </p>
-            </div>
+          <div class="example-item">
+            <p class="example-text example-text-header">Run and test your projects</p>
+            <p class="example-text example-text-body">cd path/to/project
+              <br>npm start
+              <br>npm test
+            </p>
+          </div>
 
-            <div class="example-item">
-              <p class="example-text example-text-header">Start up localhost &#127760</p>
-              <p class="example-text example-text-body">python3 -m http.server
-                <br># Commands automatically time out after 1 hour
-              </p>
-            </div>
+          <div class="example-item">
+            <p class="example-text example-text-header">Turn off your computer &#128187</p>
+            <p class="example-text example-text-body">shutdown -r now
+              <br>shutdown -h +60
+            </p>
+          </div>
 
-            <div class="example-item">
-              <p class="example-text example-text-header">Network commands</p>
-              <p class="example-text example-text-body">ping -c 5 getbidbar.com
-                <br>ipconfig getifaddr en0
-              </p>
-            </div>
+          <div class="example-item">
+            <p class="example-text example-text-header">Run commands with sudo</p>
+            <p class="example-text example-text-body">echo password | sudo -S mv file /usr/local/bin
+              <br># Expose your password at your own risk!
+            </p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Start up localhost &#127760</p>
+            <p class="example-text example-text-body">python3 -m http.server
+              <br># Commands automatically time out after 1 hour
+            </p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Network commands</p>
+            <p class="example-text example-text-body">ping -c 5 getbidbar.com
+              <br>ipconfig getifaddr en0
+            </p>
+          </div>
         </div>
       </div>
 
