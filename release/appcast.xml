@@ -2,12 +2,6 @@
 <channel>
 <title>Bidbar</title>
 <item>
-<title>1.0.1</title>
-<pubDate>Sat, 27 Jul 2019 00:05:26 -0700</pubDate>
-<sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
-<enclosure url="https://www.getbidbar.com/release/Bidbar.zip" sparkle:version="2" sparkle:shortVersionString="1.0.1" length="6108072" type="application/octet-stream" sparkle:edSignature="jHIU2rjO321rvN87bwJID1PYud1nUvJDkqP9RijxbdBFCetsEfh7llO5w/YURCOaxxy4IdeUu6ZzWByHHHsOCg=="/>
-</item>
-<item>
 <title>1.0.2</title>
 <pubDate>Sat, 27 Jul 2019 16:25:23 -0700</pubDate>
 <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
