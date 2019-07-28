@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bidbar - Save and run Terminal commands from the menu bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138416962-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138416962-1');
+    </script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/examples.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans:300,400" rel="stylesheet">
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <!-- <div class="top-example"></div> -->
+    <!-- Header -->
+    <div class="navbar no-shadow navbar-expand-md">
+      <a class="navbar-brand gradient" href="/"><img src="./assets/logo.png" alt="Logo" width="25px" class="logo"> Bidbar</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link gradient" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="container" class="container mb-3">
+      <div class="row example-header mb-5">
+        <h1 class="text-center example-header-text mb-5">Examples &#128296</h1>
+      </div>
+
+      <div class="row">
+        <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="example-item">
+            <p class="example-text example-text-header">Toggle dark mode &#9899</p>
+            <p class="example-text example-text-body">osascript -e 'tell application "System Events" to tell appearance 
+              preferences to set dark mode to not dark mode'</p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Open apps and links</p>
+            <p class="example-text example-text-body">open -a Terminal
+              <br>open -a Xcode
+              <br>open https://getbidbar.com
+            </p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Download files &#128193</p>
+            <p class="example-text example-text-body">curl -O https://getbidbar.com/release/Bidbar.zip</p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Shell script syntax</p>
+            <p class="example-text example-text-body">if [ `date +%A` == "Friday" ]
+            <br>then
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;echo TGIF!
+            <br>fi</p>
+          </div>
+        </div>
+
+        <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="example-item">
+              <p class="example-text example-text-header">Run scripts in various languages</p>
+              <p class="example-text example-text-body">python path/to/file.py
+                <br>sh shell_script.sh
+              </p>
+            </div>
+
+            <div class="example-item">
+              <p class="example-text example-text-header">Do git operations &#129425</p>
+              <p class="example-text example-text-body">cd path/to/project
+                <br>git pull
+                <br>git commit -am "Commit my awesome changes"
+              </p>
+            </div>
+
+            <div class="example-item">
+              <p class="example-text example-text-header">Run and test your projects</p>
+              <p class="example-text example-text-body">cd path/to/project
+                <br>npm start
+                <br>npm test
+              </p>
+            </div>
+        </div>
+      </div>
+
+    </div>
+    <a id="feedback" href="https://alanbi.typeform.com/to/nl719i">Submit Feedback</a>
+    <a id="twitter" href="https://twitter.com/getbidbar"><img src="./assets/twitter.png" alt="Twitter" width="32px"></a>
+  </body>
+</html>
