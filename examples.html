@@ -27,6 +27,9 @@
       <a class="navbar-brand gradient" href="/"><img src="./assets/logo.png" alt="Logo" width="25px" class="logo"> Bidbar</a>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
+          <a class="nav-link gradient" href="/examples">Examples</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link gradient" href="/contact">Contact</a>
         </li>
       </ul>
@@ -38,7 +41,7 @@
       </div>
 
       <div class="row">
-        <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
           <div class="example-item">
             <p class="example-text example-text-header">Toggle dark mode &#9899</p>
             <p class="example-text example-text-body">osascript -e 'tell application "System Events" to tell appearance 
@@ -47,17 +50,20 @@
 
           <div class="example-item">
             <p class="example-text example-text-header">Open apps and links</p>
-            <p class="example-text example-text-body">open -a Terminal
+            <p class="example-text example-text-body">open -a Terminal ~/path/to/folder
               <br>open -a Xcode
               <br>open https://getbidbar.com
             </p>
           </div>
 
           <div class="example-item">
-            <p class="example-text example-text-header">Download files &#128193</p>
-            <p class="example-text example-text-body">curl -O https://getbidbar.com/release/Bidbar.zip</p>
+            <p class="example-text example-text-header">Download and edit files &#128193</p>
+            <p class="example-text example-text-body">curl -O https://getbidbar.com/release/Bidbar.zip
+              <br>unzip Bidbar.zip
+              <br>mv Bidbar.app /Applications
+            </p>
           </div>
-
+          
           <div class="example-item">
             <p class="example-text example-text-header">Shell script syntax</p>
             <p class="example-text example-text-body">if [ `date +%A` == "Friday" ]
@@ -65,9 +71,16 @@
             <br>&nbsp;&nbsp;&nbsp;&nbsp;echo TGIF!
             <br>fi</p>
           </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Say custom messages &#128266</p>
+            <p class="example-text example-text-body">say Today's date is `date +%A%B%d`
+              <br>{ echo Goals for today; cat goals.txt; } | say
+            </p>
+          </div>
         </div>
 
-        <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
             <div class="example-item">
               <p class="example-text example-text-header">Run scripts in various languages</p>
               <p class="example-text example-text-body">python path/to/file.py
@@ -90,9 +103,31 @@
                 <br>npm test
               </p>
             </div>
+
+            <div class="example-item">
+              <p class="example-text example-text-header">Start up localhost &#127760</p>
+              <p class="example-text example-text-body">python3 -m http.server
+                <br># Commands automatically time out after 1 hour
+              </p>
+            </div>
+
+            <div class="example-item">
+              <p class="example-text example-text-header">Network commands</p>
+              <p class="example-text example-text-body">ping -c 5 getbidbar.com
+                <br>ipconfig getifaddr en0
+              </p>
+            </div>
         </div>
       </div>
 
+      <div class="row justify-content-center">
+        <h4>And much, much more...</h4>
+      </div>
+
+      <div class="row justify-content-center">
+        <a class="button download-button gradient-button" href="/release/Bidbar.zip" download 
+          onclick="trackDownload('example-page');">Download Now</a>
+      </div>
     </div>
     <a id="feedback" href="https://alanbi.typeform.com/to/nl719i">Submit Feedback</a>
     <a id="twitter" href="https://twitter.com/getbidbar"><img src="./assets/twitter.png" alt="Twitter" width="32px"></a>

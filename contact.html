@@ -26,11 +26,11 @@
 
       .button {
         color: white !important;
-        background: linear-gradient(65deg, rgb(18, 116, 237) 0%, rgb(73, 146, 240) 100%) !important;
+        background: var(--gradient-button) !important;
       }
 
       .button:hover {
-        background: linear-gradient(65deg, rgb(25, 122, 242) 0%, rgb(80, 151, 245) 100%) !important;
+        background: var(--gradient-button-hover) !important;
       }
     </style>
   </head>
@@ -39,6 +39,9 @@
     <div class="navbar no-shadow navbar-expand-md">
       <a class="navbar-brand gradient" href="/"><img src="./assets/logo.png" alt="Logo" width="25px" class="logo"> Bidbar</a>
       <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link gradient" href="/examples">Examples</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link gradient" href="/contact">Contact</a>
         </li>

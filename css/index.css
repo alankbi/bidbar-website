@@ -2,6 +2,8 @@
   --blue: rgb(18, 116, 237);
   --purple: #6954F7;
   --background-color: #fff;
+  --gradient-button: linear-gradient(65deg, var(--blue) -25%, var(--purple) 100%);
+  --gradient-button-hover: linear-gradient(65deg, rgb(28, 122, 240) -25%, #6B58FA 100%);
 }
 
 * {
@@ -113,6 +115,10 @@ a {
   box-shadow: 0 2px 8px rgba(32,43,54,0.32);
 }
 
+.nav-item {
+  margin-right: 20px;
+}
+
 .no-shadow {
   box-shadow: none !important;
 }
@@ -175,10 +181,24 @@ a {
   margin: 8px 0 20px 0;
   cursor: pointer;
   border: none;
-  background: linear-gradient(65deg, var(--purple) -25%, #9485F9 100%);
+  background: linear-gradient(65deg, var(--purple) -25%, rgb(135, 119, 235) 100%);
   box-shadow: 0 8px 24px rgba(32,43,54,0.42);
   width: 300px;
   height: 45px;
+}
+
+.download-button {
+  text-align: center;
+  font-size: large;
+  color: white;
+  width: 250px;
+  height: 56px !important;
+  line-height: 40px !important;
+  vertical-align: center;
+}
+
+.gradient-button {
+  background: var(--gradient-button);
 }
 
 .button:focus {
@@ -190,7 +210,16 @@ div[class="mce_inline_error"] {
 }
 
 .button:hover {
-  background: linear-gradient(65deg, #6B58FA -25%, #9686FB 100%);
+  background: linear-gradient(65deg, #6B58FA -25%, rgb(138, 123, 235) 100%);
+}
+
+.download-button:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.gradient-button:hover {
+  background: var(--gradient-button-hover)
 }
 
 .row {
