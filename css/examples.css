@@ -1,8 +1,4 @@
 @media only screen and (max-width: 525px) and (min-width: 401px) {
-  .example-item {
-    width: 250px !important;
-  }
-  
   .example-header {
     margin-bottom: 50px !important;
   }
@@ -13,11 +9,7 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .example-item {
-    width: 200px !important;
-  }
-
-  .example-header {
+.example-header {
     margin-bottom: 30px !important;
   }
 
@@ -49,43 +41,4 @@
 
 .example-header-text {
   font-size: 70px;
-}
-
-.col {
-  text-align: center;
-}
-
-.example-item {
-  display: inline-block;
-  text-align: left;
-  height: 110px;
-  width: 360px;
-  margin: 30px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  box-shadow: inset 0 2px 0 rgba(255,255,255,.6), 0 1px 6px 2px rgba(0,0,0,0.16);
-}
-
-.example-text {
-  margin: 0;
-  overflow: auto;
-  /* overflow-x: scroll; */
-  white-space: nowrap;
-}
-
-.example-text-header {
-  font-weight: bold;
-  font-size: large;
-  margin-bottom: 3px;
-  -ms-overflow-style: none;
-  scrollbar-width: none;  
-}
-
-.example-text-header::-webkit-scrollbar { 
-  display: none;
-}
-
-.example-text-body {
-  font-size: smaller;
-  height: 65px;
 }
