@@ -3,14 +3,21 @@
     <channel>
         <title>Bidbar</title>
         <item>
-            <title>Version 1.0.2</title>
-            <pubDate>Sun, 28 Jul 2019 13:58:00 -0700</pubDate>
+            <title>Version 1.0.3</title>
+            <description><![CDATA[
+                <h2>New Features</h2>
+                <ul>
+                    <li>Increased update checks from one hour to one day</li>
+                </ul>
+            ]]>
+            </description>
+            <pubDate>Mon, 29 Jul 2019 23:05:00 -0700</pubDate>
             <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
             <enclosure url="https://www.getbidbar.com/release/Bidbar.zip"
-                sparkle:version="3"
-                sparkle:shortVersionString="1.0.2"
-                sparkle:edSignature="OXvT4V7D3zXxpmiqt9hPRedcQ9OqbtKY2nNdv5Ftg1XVmxvhmgqumjPsQ7tO5HT54V9a5abvLAVz4rmE/bgkCw=="
-                length="6108137"
+                sparkle:version="4"
+                sparkle:shortVersionString="1.0.3"
+                sparkle:edSignature="vuCDCnBhhppl4qkpAZUXdSajIbJrU7qJB9MNndZLke3ZzSp1GFr/KCH8e4rfPkU3zEi6dBCW22luW2oSx1cZBA=="
+                length="6108121"
                 type="application/octet-stream" />
         </item>
     </channel>
