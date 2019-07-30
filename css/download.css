@@ -1,0 +1,28 @@
+.download-container {
+  /* width: 70vw; */
+  margin-top: -60px;
+}
+
+.download-subscribe-form {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.download-input {
+  width: 250px !important;
+}
+
+.download-link {
+  color: gray;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.share-buttons {
+  justify-content: center;
+  text-align: center;
+}
+
+.share-buttons a {
+  margin: 2px 6px;
+}

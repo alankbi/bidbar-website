@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bidbar - Save and run Terminal commands from the menu bar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138416962-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138416962-1');
+    </script>
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/examples.css">
+    <link rel="stylesheet" href="./css/example-items.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans:300,400" rel="stylesheet">
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <!-- <div class="top-example"></div> -->
+    <!-- Header -->
+    <div class="navbar no-shadow navbar-expand">
+      <a class="navbar-brand gradient" href="/"><img src="./assets/logo.png" alt="Logo" width="25px" class="logo"> Bidbar</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link gradient" href="/download" onclick="trackDownload('header');">Download</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link gradient" href="/examples">Examples</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link gradient" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="container" class="container mb-3">
+      <div class="row example-header">
+        <p class="text-center example-header-text mb-5">Examples &#128296</p>
+      </div>
+
+      <div class="row">
+        <div class="column col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <div class="example-item">
+            <p class="example-text example-text-header">Save hard-to-remember commands</p>
+            <p class="example-text example-text-body">git reset --soft HEAD~1
+              <br>grep -rnw "keyword" ./directory
+            </p>
+          </div>
+          
+          <div class="example-item">
+            <p class="example-text example-text-header">Toggle dark mode &#9899</p>
+            <p class="example-text example-text-body">osascript -e 'tell application "System Events" to tell appearance 
+              preferences to set dark mode to not dark mode'</p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Open apps and links</p>
+            <p class="example-text example-text-body">open -a Terminal ~/path/to/folder
+              <br>open -a Xcode
+              <br>open https://getbidbar.com
+            </p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Download and edit files &#128193</p>
+            <p class="example-text example-text-body">curl -O https://getbidbar.com/release/Bidbar.zip
+              <br>unzip Bidbar.zip
+              <br>mv Bidbar.app /Applications
+            </p>
+          </div>
+          
+          <div class="example-item">
+            <p class="example-text example-text-header">Shell script syntax</p>
+            <p class="example-text example-text-body">if [ `date +%A` == "Friday" ]
+            <br>then
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;echo TGIF!
+            <br>fi</p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Say custom messages &#128266</p>
+            <p class="example-text example-text-body">say Today's date is `date +%A%B%d`
+              <br>{ echo Goals for today; cat goals.txt; } | say
+            </p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Modify default Mac settings</p>
+            <p class="example-text example-text-body">defaults write com.apple.finder AppleShowAllFiles -bool TRUE
+              <br>defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 30
+              <br>defaults write -g com.apple.springing.delay -float 1.0
+            </p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Keep your computer running &#9749</p>
+            <p class="example-text example-text-body">caffeinate -t 3600
+              <br># Commands automatically time out after 1 hour
+            </p>
+          </div>
+        </div>
+
+        <div class="column col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <div class="example-item">
+            <p class="example-text example-text-header">Do git operations &#129425</p>
+            <p class="example-text example-text-body">cd path/to/project &&
+              <br>git pull &&
+              <br>git commit -am "Commit my awesome changes"
+            </p>
+          </div>
+          
+          <div class="example-item">
+            <p class="example-text example-text-header">Run scripts in various languages</p>
+            <p class="example-text example-text-body">python path/to/file.py
+              <br>sh shell_script.sh
+            </p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Take screenshots &#128247</p>
+            <p class="example-text example-text-body">screencapture -x -R0,0,640,320 ~/Pictures/Screenshot.png</p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Run and test your projects</p>
+            <p class="example-text example-text-body">cd path/to/project &&
+              <br>npm start &&
+              <br>npm test
+            </p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Turn off your computer &#128187</p>
+            <p class="example-text example-text-body">shutdown -r now
+              <br>shutdown -h +60
+            </p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Run commands with sudo</p>
+            <p class="example-text example-text-body">echo password | sudo -S mv file /usr/local/bin
+              <br># Expose your password at your own risk!
+            </p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Start up localhost &#127760</p>
+            <p class="example-text example-text-body">python3 -m http.server
+              <br># Commands automatically time out after 1 hour
+            </p>
+          </div>
+
+          <div class="example-item">
+            <p class="example-text example-text-header">Network commands</p>
+            <p class="example-text example-text-body">ping -c 5 getbidbar.com
+              <br>ipconfig getifaddr en0
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <h4>And much, much more...</h4>
+      </div>
+
+      <div class="row" style="margin-top: 100px;">
+        <div class="column col-lg-6 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 100px;">
+          <h3>Try Bidbar for free</h3>
+          <div class="download-button-container justify-content-center">
+            <a class="button download-button gradient-button" href="/download"
+              onclick="trackDownload('examples-page');">Download Now</a>
+          </div>
+          <p class="free-trial-text text-auto">7-day free trial</p>
+        </div>
+        <div class="column col-lg-6 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 80px;">
+          <h3 style="margin-bottom: 30px;">Purchase for $10</h3>
+          <a style="line-height: 56px !important;" class="gumroad-button" href="https://gum.co/bidbar?wanted=true"
+            target="_blank">Purchase license key</a>
+          <p class="free-trial-text text-auto gumroad-text">Pay once, use Bidbar forever</p>
+        </div>
+      </div>
+    </div>
+    <a id="creator" href="https://www.alanbi.com">Made by Alan Bi (@alankbi)</a>
+    <a id="feedback" href="https://alanbi.typeform.com/to/nl719i">Submit Feedback</a>
+    <a id="twitter" href="https://twitter.com/getbidbar"><img src="./assets/twitter.png" alt="Twitter" width="32px"></a>
+  </body>
+</html>

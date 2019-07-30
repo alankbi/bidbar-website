@@ -1,0 +1,392 @@
+:root {
+  --blue: rgb(18, 116, 237);
+  --purple: #6954F7;
+  --background-color: #fff;
+  --gradient-button: linear-gradient(65deg, var(--blue) -25%, var(--purple) 100%);
+  --gradient-button-hover: linear-gradient(65deg, rgb(28, 122, 240) -25%, #6B58FA 100%);
+}
+
+* {
+  color: #333;
+}
+
+@media only screen and (max-width: 1000px) {
+  #top-image {
+    display: none;
+  }
+  
+  #top-text {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: -40px;
+  }
+
+  .output-img {
+    width: 250px;
+  }
+
+  .description {
+    margin-top: 40px !important;
+  }
+
+  .top {
+    height: 620px !important;
+  }
+
+  .download-button-container {
+    justify-content: center;
+  }
+  
+  .free-trial-text {
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .output-row {
+    display: table;
+    text-align: center;
+    border-spacing: 30px;
+    margin-top: -20px;
+  }
+  
+  .output-col-1 {
+    display: table-footer-group;
+    text-align: center;
+  }
+  
+  .output-col-2 {
+    display: table-header-group;
+    text-align: center;
+  }
+
+  .keyboard {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 401px) {
+  .nav-link {
+    font-size: small !important;
+  }
+
+  .nav-item {
+    margin-right: 5px !important;
+  }
+
+  #top-text {
+    margin-bottom: 30px;
+  }
+
+  .top {
+    height: 660px !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .button, .email {
+    width: 200px !important;
+  }
+
+  .output-img {
+    width: 200px;
+  }
+
+  #feedback {
+    font-size: x-small !important;
+  }
+
+  .nav-link {
+    font-size: xx-small !important;
+  }
+
+  .nav-item {
+    margin-right: 2px !important;
+  }
+
+  .top {
+    height: 720px !important;
+  }
+}
+
+@media only screen and (max-height: 500px) and (max-width: 1000px) {
+  #top-text {
+    /* margin-bottom: 0px; */
+  }
+
+  .top {
+    /* height: 560px !important; */
+  }
+}
+
+@media only screen and (min-height: 700px) and (max-width: 999px) {
+  .top {
+    /* height: 750px !important; */
+  }
+}
+
+@media only screen and (min-height: 850px) and (min-width: 1000px) {
+  .top {
+    /* height: 1050px !important; */
+  }
+
+  #top-image {
+    /* margin-bottom: 100px; */
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  position: relative;
+  height: 100%;
+}
+
+a {
+  color: var(--blue);
+}
+
+.navbar {
+  margin-bottom: 130px;
+  background-color: var(--background-color);
+  width: 100%;
+  padding: 12px 10vw;
+  box-shadow: 0 2px 8px rgba(32,43,54,0.32);
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.no-shadow {
+  box-shadow: none !important;
+}
+
+.navbar-brand {
+  font-size: x-large;
+}
+
+.nav-link {
+  font-size: large;
+}
+
+.gradient {
+  background: -webkit-linear-gradient(45deg, var(--blue), var(--purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text {
+  color: var(--blue);
+}
+
+.inline-p p {
+  display: inline;
+}
+
+.logo {
+  margin-top: -5px;
+  margin-right: 2px;
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 900px;
+  /* background-color: var(--blue); */
+  background: linear-gradient(45deg, var(--blue) 50%, var(--purple) 135%);
+}
+
+.first-row {
+  margin-bottom: 150px !important;
+}
+
+.first-row h1, .first-row p, .first-row input[type="submit"] {
+  color: #fafafa !important;
+}
+
+.main-text {
+  font-size: large;
+}
+
+.email {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 4px 8px;
+  margin: 4px 0;
+  color: #333;
+  width: 300px;
+  height: 45px;
+}
+
+.gumroad-button {
+  width: 250px;
+  height: 56px;
+  line-height: 56px !important;
+  margin-top: 8px;
+}
+
+.button {
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin: 8px 0 20px 0;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(65deg, var(--purple) -25%, rgb(138, 122, 241) 100%);
+  box-shadow: 0 8px 24px rgba(32,43,54,0.42);
+  width: 300px;
+  height: 45px;
+}
+
+.download-button {
+  text-align: center;
+  font-size: large;
+  color: var(--purple);
+  width: 250px;
+  height: 56px !important;
+  line-height: 40px !important;
+  vertical-align: center;
+  background: white;
+}
+
+.download-button-container {
+  display: flex;
+}
+
+.free-trial-text {
+  width: 250px;
+  text-align: center;
+  margin-top: -10px;
+  font-size: 14px;
+}
+
+.text-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gumroad-text {
+  margin-top: 10px !important;
+}
+
+.gradient-button {
+  background: var(--gradient-button);
+  color: white;
+}
+
+.button:focus {
+  outline:0;
+}
+
+div[class="mce_inline_error"] {
+  background-color: transparent !important;
+}
+
+.button:hover {
+  background: linear-gradient(65deg, #6B58FA -25%, rgb(141, 126, 240) 100%);
+}
+
+.download-button:hover {
+  color: var(--purple);
+  text-decoration: none;
+  background: #fafafa !important;
+}
+
+.gradient-button:hover {
+  color: white !important;
+  background: var(--gradient-button-hover) !important;
+}
+
+.row {
+  margin-bottom: 50px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.image-col {
+  text-align: center;
+}
+
+.mac-shadow {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.6), 0 12px 30px 4px rgba(0,0,0,0.56);
+}
+
+.mac-shadow-small {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.6), 0 12px 30px 4px rgba(0,0,0,0.36);
+  border-radius: 2%;
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
+.description {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: center;
+  height: 40px;
+  padding: 5px;
+}
+
+th {
+  background-color: #f6f6f6;
+}
+
+/* Feedback */
+#feedback {
+  position: fixed;
+  bottom: 10px;
+  right: 12px;
+  font-size: small;
+  padding: 6px;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(32,43,54,0.32);
+}
+
+#feedback:hover {
+  text-decoration: none;
+}
+
+/* Twitter */
+#twitter {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+
+#creator {
+  width: 200px;
+  position: absolute;
+  text-align: center;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: #999;
+  font-size: small;
+}
+
+#creator:hover {
+  color: #999;
+}

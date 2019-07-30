@@ -1,0 +1,44 @@
+@media only screen and (max-width: 525px) and (min-width: 401px) {
+  .example-header {
+    margin-bottom: 50px !important;
+  }
+
+  .example-header-text {
+    font-size: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+.example-header {
+    margin-bottom: 30px !important;
+  }
+
+  .example-header-text {
+    font-size: 40px !important;
+  }
+}
+
+.navbar {
+  margin-bottom: 120px;
+}
+
+.top-example {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  /* background-color: var(--blue); */
+  background: linear-gradient(45deg, var(--blue) 50%, var(--purple) 135%);
+  z-index: -10;
+}
+
+.example-header {
+  margin-bottom: 80px;
+  text-align: center;
+  justify-content: center;
+}
+
+.example-header-text {
+  font-size: 70px;
+}
