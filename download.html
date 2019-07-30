@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bidbar - Run scripts from the menu bar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138416962-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138416962-1');
+  </script>
+  <script src="https://gumroad.com/js/gumroad.js"></script>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/download.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans:300,400" rel="stylesheet">
+  <script src="index.js"></script>
+  <style>
+    div[class="mce_inline_error"] {
+      color: #333 !important;
+    }
+
+    .button {
+      color: white !important;
+      background: var(--gradient-button) !important;
+    }
+
+    .button:hover {
+      background: var(--gradient-button-hover) !important;
+    }
+  </style>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('download-link').click();
+      }, false);
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="navbar no-shadow navbar-expand">
+    <a class="navbar-brand gradient" href="/"><img src="./assets/logo.png" alt="Logo" width="25px" class="logo">
+      Bidbar</a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link gradient" href="/download" onclick="trackDownload('header');">Download</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link gradient" href="/examples">Examples</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link gradient" href="/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div id="container" class="container download-container">
+    <div class="download mb-5 text-center">
+      <h1 class="text-center mb-3">Thank you for downloading!</h1>
+      <h6 class="mb-5">Enjoy your 7-day free trial of Bidbar.</h6>
+      <p>Please share Bidbar on social media, subscribe for updates, or purchase a license key!</p>
+      <p class="download-link">If the download hasn't automatically started, 
+        <a id="download-link" href="/release/Bidbar.zip" download>click here.</a></p>
+    </div>
+    
+    <!--These buttons are created by frinmash.blogspot.com,frinton madtha-->
+    <div class="share-buttons">
+      <!-- Facebook --> <a href="https://www.facebook.com/sharer.php?u=https://www.getbidbar.com" target="_blank"><img
+          src="./assets/social/facebook.png" width="45px"
+          alt="Facebook" /></a> 
+      <!-- Twitter --> <a
+        href="https://twitter.com/share?url=https://www.getbidbar.com&text=I just downloaded #getbidbar!" target="_blank"><img
+          src="./assets/social/twitter.png" width="45px"
+          alt="Twitter" /></a> 
+      <!-- Reddit --> <a
+        href="http://reddit.com/submit?url=https://www.getbidbar.com&title=I just downloaded Bidbar" target="_blank"><img
+          src="./assets/social/reddit.png" width="45px"
+          alt="Reddit" /></a> 
+      <!-- LinkedIn --> <a
+        href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.getbidbar.com" target="_blank"><img
+          src="./assets/social/linkedin.png" width="45px"
+          alt="LinkedIn" /></a> 
+      <!-- Email --> <a
+        href="mailto:?Subject=Bidbar&Body=I%20just%20downloaded%20Bidbar!%20 https://www.getbidbar.com"><img
+          src="./assets/social/email.png" width="45px"
+          alt="Email" /></a> 
+    </div>
+
+    <div class="row" style="margin-top: 80px;">
+      <div class="column col-lg-6 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 100px;">
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup" class="download-subscribe-form">
+          <form action="https://alanbi.us20.list-manage.com/subscribe/post?u=561bf2b7e08898f9277f2f7ac&amp;id=2036e534ed"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+            novalidate>
+            <div id="mc_embed_signup_scroll">
+              <h3>Subscribe for updates</h3>
+              <div class="mc-field-group">
+                <input type="email" value="" placeholder="Email" name="EMAIL" class="required email download-input" id="mce-EMAIL">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_561bf2b7e08898f9277f2f7ac_2036e534ed" tabindex="-1" value="">
+              </div>
+              <div class="clear">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button download-input">
+              </div>
+            </div>
+          </form>
+        </div>
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script type='text/javascript'>(function ($) {
+            window.fnames = new Array(); window.ftypes = new Array();
+            fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE';
+            ftypes[4] = 'phone';
+          }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+        <!--End mc_embed_signup-->
+      </div>
+      <div class="column col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center" style="margin-bottom: 80px;">
+        <h3 style="margin-bottom: 30px;">Purchase for $10</h3>
+        <a style="line-height: 56px !important;" class="gumroad-button" href="https://gum.co/bidbar?wanted=true"
+          target="_blank">Purchase license key</a>
+        <p class="free-trial-text text-auto gumroad-text">Pay once, use Bidbar forever</p>
+      </div>
+    </div>
+  </div>
+  <a id="creator" href="https://www.alanbi.com">Made by Alan Bi (@alankbi)</a>
+  <a id="feedback" href="https://alanbi.typeform.com/to/nl719i">Submit Feedback</a>
+  <a id="twitter" href="https://twitter.com/getbidbar"><img src="./assets/twitter.png" alt="Twitter"
+      width="32px"></a>
+</body>
+
+</html>
