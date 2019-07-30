@@ -1,19 +1,24 @@
-<?xml version="1.0" standalone="yes"?><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
-<channel>
-<title>Bidbar</title>
-<item>
-<title>1.0</title>
-<pubDate>Thu, 25 Jul 2019 17:04:12 -0700</pubDate>
-<sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
-<enclosure url="Bidbar.dmg" sparkle:version="1" sparkle:shortVersionString="1.0" length="5956527" type="application/octet-stream"/>
-</item>
-<item>
-<title>1.0.1</title>
-<pubDate>Fri, 26 Jul 2019 18:21:27 -0700</pubDate>
-<sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
-<enclosure url="https://www.getbidbar.com/release/Bidbar.dmg" sparkle:version="2" sparkle:shortVersionString="1.0.1" length="5956527" type="application/octet-stream" sparkle:edSignature="RlnnMn6qpa1m6HmFyRbEB7VgwDMEWS74PFxICN33uAdFZ2uzzK7cvfxIpayRwsgQyjxD50yPdlUy1Y1jj+HLCA=="/>
-<sparkle:deltas>
-<enclosure url="https://www.getbidbar.com/release/Bidbar2-1.delta" sparkle:version="2" sparkle:shortVersionString="1.0.1" sparkle:deltaFrom="1" length="57791" type="application/octet-stream" sparkle:edSignature="OMQulKhQ9VfzZmjA8pN5Ej/cM5jg7T3lyQ0/ZEcOMcpXyxgJ8GFXUEJCxbBp+2wsueEk4VuARL+xiIxOTecSAw=="/></sparkle:deltas>
-</item>
-
-</channel></rss>
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Bidbar</title>
+        <item>
+            <title>Version 1.0.3</title>
+            <description><![CDATA[
+                <h2>New Features</h2>
+                <ul>
+                    <li>Increased update checks from one hour to one day</li>
+                </ul>
+            ]]>
+            </description>
+            <pubDate>Mon, 29 Jul 2019 23:05:00 -0700</pubDate>
+            <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
+            <enclosure url="https://www.getbidbar.com/release/Bidbar.zip"
+                sparkle:version="4"
+                sparkle:shortVersionString="1.0.3"
+                sparkle:edSignature="vuCDCnBhhppl4qkpAZUXdSajIbJrU7qJB9MNndZLke3ZzSp1GFr/KCH8e4rfPkU3zEi6dBCW22luW2oSx1cZBA=="
+                length="6108121"
+                type="application/octet-stream" />
+        </item>
+    </channel>
+</rss>
