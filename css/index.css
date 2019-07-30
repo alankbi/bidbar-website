@@ -17,7 +17,7 @@
   
   #top-text {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     margin-top: -40px;
   }
 
@@ -30,7 +30,7 @@
   }
 
   .top {
-    height: 650px !important;
+    height: 620px !important;
   }
 
   .download-button-container {
@@ -66,6 +66,24 @@
   }
 }
 
+@media only screen and (max-width: 500px) and (min-width: 401px) {
+  .nav-link {
+    font-size: small !important;
+  }
+
+  .nav-item {
+    margin-right: 5px !important;
+  }
+
+  #top-text {
+    margin-bottom: 30px;
+  }
+
+  .top {
+    height: 660px !important;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .button, .email {
     width: 200px !important;
@@ -78,31 +96,43 @@
   #feedback {
     font-size: x-small !important;
   }
+
+  .nav-link {
+    font-size: xx-small !important;
+  }
+
+  .nav-item {
+    margin-right: 2px !important;
+  }
+
+  .top {
+    height: 720px !important;
+  }
 }
 
 @media only screen and (max-height: 500px) and (max-width: 1000px) {
   #top-text {
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
   }
 
   .top {
-    height: 560px !important;
+    /* height: 560px !important; */
   }
 }
 
 @media only screen and (min-height: 700px) and (max-width: 999px) {
   .top {
-    height: 750px !important;
+    /* height: 750px !important; */
   }
 }
 
 @media only screen and (min-height: 850px) and (min-width: 1000px) {
   .top {
-    height: 1050px !important;
+    /* height: 1050px !important; */
   }
 
   #top-image {
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
 }
 
@@ -117,7 +147,7 @@ a {
 }
 
 .navbar {
-  margin-bottom: 20vh;
+  margin-bottom: 130px;
   background-color: var(--background-color);
   width: 100%;
   padding: 12px 10vw;
