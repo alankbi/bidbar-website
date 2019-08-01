@@ -120,6 +120,19 @@ a {
   color: var(--blue);
 }
 
+.youtube-link {
+  color: white;
+  font-size: small;
+  margin-top: -30px;
+  margin-bottom: 35px;
+  display: block;
+}
+
+.youtube-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .navbar {
   margin-bottom: 130px;
   background-color: var(--background-color);
