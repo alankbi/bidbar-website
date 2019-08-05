@@ -62,7 +62,7 @@
   }
 
   .keyboard {
-    width: 70%;
+    /* width: 70%; */
   }
 }
 
@@ -303,7 +303,7 @@ div[class="mce_inline_error"] {
 
 .mac-shadow-small {
   box-shadow: inset 0 1px 0 rgba(255,255,255,.6), 0 12px 30px 4px rgba(0,0,0,0.36);
-  border-radius: 2%;
+  /* border-radius: 2%; */
 }
 
 .section {
@@ -315,7 +315,7 @@ div[class="mce_inline_error"] {
   margin-bottom: 50px;
 }
 
-h3 {
+h2, h3 {
   margin-bottom: 30px;
 }
 

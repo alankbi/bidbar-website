@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bidbar - Save and run Terminal commands from the menu bar</title>
+    <title>Bidbar - Keyboard shortcuts for all your commands</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138416962-1"></script>
@@ -43,8 +43,8 @@
       <div class="row first-row">
         <div class="col" id="top-text">
           <div class="description">
-            <h1>Too many commands to memorize? </h1>
-            <p class="main-text">Save Terminal commands in the Mac menu bar. Run and copy them with keyboard shortcuts.</p>
+            <h1>Keyboard shortcuts for all your commands </h1>
+            <p class="main-text">Enough with the bash aliases. With Bidbar, save and run commands from the menu bar in seconds.</p>
           </div>
           <div class="download-button-container text-center">
             <a class="button download-button" href="/download" onclick="trackDownload('main-top');">
@@ -61,35 +61,64 @@
       <!-- Detailed description -->
       <div class="text-center section">
         <div class="description text-center">
-          <h3>Save the most important commands in the menu bar</h3>
-          <p>With Bidbar, all your commands are at your finger tips, just a click of a button or a tap of a key away.</p>
+          <h2>Always one click away</h2>
+          <p>Click the Bidbar icon in the menu bar to instantly add, copy, or run your commands. It literally takes <u>seconds</u>.</p>
         </div>
-        <img src="./assets/bidbar_desktop.png" alt="Image of Bidbar" width="80%" class="mac-shadow">
+        <img src="./assets/bidbar_desktop.gif" alt="GIF of Bidbar" width="80%" class="mac-shadow-small">
       </div>
 
-      <h3 class="text-center">Unlimited possibilities</h3>
-      <p class="text-center mb-4">Jot down simple one-liners you keep forgetting or save complex scripts that serve a purpose.</p>
+      <!-- Keyboard shortcuts -->
+      <div class="text-center section">
+        <div class="description text-center inline-p">
+          <h3>Keyboard shortcuts for every command</h3>
+          <p>Use keyboard shortcut</p>
+          <p class="blue-text">&#8984;&#8997; + [1-9]</p>
+          <p> to run and</p>
+          <p class="blue-text">&#8679;&#8984;&#8997; + [1-9]</p>
+          <p>to copy commands 1-9. All automatically set up for you.</p>
+        </div>
+        <img src="./assets/keyboard.gif" alt="Image of Bidbar" width="75%" class="mac-shadow-small keyboard">
+      </div>
+
+      <!-- Output -->
+      <div class="row output-row">
+        <div class="col image-col output-col-1">
+          <img class="output-img" src="./assets/bidbar_notification.png" alt="Notification" width="350px">
+          <img class="output-img" src="./assets/bidbar_output.png" alt="Notification" width="400px">
+        </div>
+        <div class="col description output-col-2">
+          <h3>Immediate status updates</h3>
+          <p>After running a command, see the results in a detailed notification and view the
+            output in a clean, minimal window.</p>
+        </div>
+      </div>
+
+      <!-- Examples -->
+      <h3 class="text-center">Anything bash goes</h3>
+      <p class="text-center mb-4">Utilize the full power of the command line. Anything you can think of, you can do with Bidbar.</p>
       <div class="row">
         <div class="column col-lg-6 col-md-12 col-sm-12 col-xs-12">
-          <div class="example-item">
-            <p class="example-text example-text-header">Save hard-to-remember commands</p>
-            <p class="example-text example-text-body">git reset --soft HEAD~1
-              <br>grep -rnw "keyword" ./directory
-            </p>
-          </div>
-      
-          <div class="example-item">
-            <p class="example-text example-text-header">Toggle dark mode &#9899</p>
-            <p class="example-text example-text-body">osascript -e 'tell application "System Events" to tell appearance
-              preferences to set dark mode to not dark mode'</p>
-          </div>
-      
           <div class="example-item">
             <p class="example-text example-text-header">Open apps and links</p>
             <p class="example-text example-text-body">open -a Terminal ~/path/to/folder
               <br>open -a Xcode
               <br>open https://getbidbar.com
             </p>
+          </div>
+      
+          <div class="example-item">
+            <p class="example-text example-text-header">Run commands with sudo &#128274</p>
+            <p class="example-text example-text-body">echo password | sudo -S mv file /usr/local/bin
+              <br># Expose your password at your own risk!
+            </p>
+          </div>
+      
+          <div class="example-item">
+            <p class="example-text example-text-header">Shell script syntax</p>
+            <p class="example-text example-text-body">if [ `date +%A` == "Friday" ]
+              <br>then
+              <br>&nbsp;&nbsp;&nbsp;&nbsp;echo TGIF!
+              <br>fi</p>
           </div>
         </div>
       
@@ -121,29 +150,9 @@
         <a class="more-examples" href="/examples">View more examples &#128073</a>
       </div>
 
-      <div class="row output-row">
-        <div class="col image-col output-col-1">
-          <img class="output-img" src="./assets/bidbar_notification.png" alt="Notification" width="350px">
-          <img class="output-img" src="./assets/bidbar_output.png" alt="Notification" width="400px">
-        </div>
-        <div class="col description output-col-2">
-          <h3>View the output of your commands</h3>
-          <p>After running a command, see the results in a detailed notification and view the
-            output in a clean, minimal window.</p>
-        </div>
-      </div>
-
-      <!-- Keyboard shortcuts -->
-      <div class="text-center section">
-        <div class="description text-center inline-p">
-          <h3>Run and copy your commands with keyboard shortcuts</h3>
-          <p>Use keyboard shortcut</p> <p class="blue-text">&#8984;&#8997; + [1-9]</p><p> to run and</p> 
-          <p class="blue-text">&#8679;&#8984;&#8997; + [1-9]</p> <p>to copy commands 1-9 without using a mouse.</p>
-        </div>
-        <img src="./assets/keyboard.png" alt="Image of Bidbar" width="50%" class="mac-shadow-small keyboard">
-      </div>
-
-      <div class="row" style="margin-top: 150px;">
+      <!-- Call to action -->
+      <h2 class="text-center">What are you waiting for? </h2>
+      <div class="row" style="margin-top: 70px;">
         <div class="column col-lg-6 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 100px;">
           <h3>Try Bidbar for free</h3>
           <div class="download-button-container justify-content-center">
