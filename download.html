@@ -44,12 +44,12 @@
 
 <body>
   <!-- Header -->
-  <div class="navbar no-shadow navbar-expand">
+  <div class="navbar no-shadow navbar-expand fixed-top">
     <a class="navbar-brand gradient" href="/"><img src="./assets/logo.png" alt="Logo" width="25px" class="logo">
       Bidbar</a>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link gradient" href="/download" onclick="trackDownload('header');">Download</a>
+        <a class="nav-link gradient" href="/download" onclick="trackDownload('header-download');">Download</a>
       </li>
       <li class="nav-item">
         <a class="nav-link gradient" href="/examples">Examples</a>
@@ -60,6 +60,7 @@
     </ul>
   </div>
   <div id="container" class="container download-container">
+    <div class="margin-bottom-130">.</div>
     <div class="download mb-5 text-center">
       <h1 class="text-center mb-3">Thank you for downloading!</h1>
       <h6 class="mb-5">Enjoy your 7-day free trial of Bidbar.</h6>

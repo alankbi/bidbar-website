@@ -138,7 +138,8 @@ a {
   background-color: var(--background-color);
   width: 100%;
   padding: 12px 10vw;
-  box-shadow: 0 2px 8px rgba(32,43,54,0.32);
+  box-shadow: 0 2px 8px rgba(32,43,54,0.12);
+  height: 65px;
 }
 
 .nav-item {
@@ -146,7 +147,8 @@ a {
 }
 
 .no-shadow {
-  box-shadow: none !important;
+  /* box-shadow: none !important; */
+  /* border-bottom: 1px solid #eee; */
 }
 
 .navbar-brand {
@@ -189,6 +191,12 @@ a {
 
 .first-row {
   margin-bottom: 150px !important;
+}
+
+/* To get first row to display correctly when header is changed to fixed */
+.margin-bottom-130 {
+  margin-bottom: 130px;
+  height: 70px;
 }
 
 .first-row h1, .first-row p, .first-row input[type="submit"] {
