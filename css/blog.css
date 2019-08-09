@@ -1,0 +1,95 @@
+@media only screen and (max-width: 800px) {
+  .blog-left {
+    display: none;
+  }
+
+  .blog-right {
+    width: 90% !important;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 525px) and (min-width: 401px) {
+  .blog-header {
+    margin-bottom: 50px !important;
+  }
+
+  .blog-header-text {
+    font-size: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+.blog-header {
+    margin-bottom: 30px !important;
+  }
+
+  .blog-header-text {
+    font-size: 40px !important;
+  }
+}
+
+.navbar {
+  margin-bottom: 100px;
+}
+
+.blog-header {
+  margin-bottom: 70px;
+  text-align: center;
+  justify-content: center;
+}
+
+.blog-header-text {
+  font-size: 70px;
+}
+
+.blog-item {
+  display: inline-block;
+  text-align: left;
+  width: 90%;
+  min-height: 220px;
+  margin: 30px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 0 rgba(255,255,255,.6), 0 1px 6px 2px rgba(0,0,0,0.16);
+}
+
+.blog-item:hover {
+  box-shadow: inset 0 2px 0 rgba(255,255,255,.6), 0 2px 10px 2px rgba(0,0,0,0.16);
+}
+
+.blog-col {
+  float: left;
+  height: 100%;
+}
+
+.blog-img {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%); 
+}
+
+.blog-left {
+  width: 30%;
+  position: relative;
+}
+
+.blog-right {
+  width: 70%;
+}
+
+.blog-text {
+  display: block;
+}
+
+.blog-text-header {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.blog-text-body {
+  font-size: large;
+}
