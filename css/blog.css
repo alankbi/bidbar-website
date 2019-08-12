@@ -93,3 +93,17 @@
 .blog-text-body {
   font-size: large;
 }
+
+.blog-content {
+  width: 70%;
+  margin: 100px auto;
+  font-size: large;
+}
+
+.blog-content br {
+  /* line-height: 60px; */
+}
+
+.blog-content h2 {
+  line-height: 120px;
+}
