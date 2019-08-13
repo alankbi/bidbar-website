@@ -385,3 +385,13 @@ th {
 #creator:hover {
   color: #999;
 }
+
+#blog {
+  position: absolute;
+  bottom: 14px;
+  left: 60px;
+}
+
+#blog:hover {
+  text-decoration: none;
+}

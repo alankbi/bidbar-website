@@ -26,3 +26,13 @@
   bottom: 10px;
   left: 15px;
 }
+
+#blog-contact-page {
+  position: fixed;
+  bottom: 14px;
+  left: 60px;
+}
+
+#blog-contact-page:hover {
+  text-decoration: none;
+}

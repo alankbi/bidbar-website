@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bidbar - Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Anti-flicker snippet (recommended)  -->
+    <style>
+      .async-hide {
+        opacity: 0 !important
+      }
+    </style>
+    <script>(function (a, s, y, n, c, h, i, d, e) {
+        s.className += ' ' + y; h.start = 1 * new Date;
+        h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
+        (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
+      })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
+        { 'GTM-MQ7MCP9': true });</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138416962-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138416962-1', { 'optimize_id': 'GTM-MQ7MCP9' });
+    </script>
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans:300,400" rel="stylesheet">
+    <script src="../index.js"></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="navbar no-shadow navbar-expand fixed-top">
+      <a class="navbar-brand gradient" href="/"><img src="../assets/logo.png" alt="Logo" width="25px" class="logo">
+        Bidbar</a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link gradient" href="/download" onclick="trackDownload('header-blog');">Download</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link gradient" href="/examples">Examples</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link gradient" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="container" class="container mb-3">
+      <div class="margin-bottom-130">.</div>
+      <div class="row blog-header">
+        <p class="text-center blog-header-text mb-5">Blog</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="blog-item">
+          <a class="blog-link" href="/blog/overview-important-programming-topics">
+            <div class="blog-col blog-left">
+              <img class="blog-img" src="../assets/blog/programming_topics.jpg" alt="Programming topics image">
+            </div>
+            <div class="blog-col blog-right">
+              <h3 class="blog-text blog-text-header">An overview of important programming topics</h3>
+              <p class="blog-text blog-text-body">In this blog post, we cover programming topics ranging from 
+                programming languages to the command line.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row text-center" style="margin-top: 100px;">
+        <div class="column col-lg-6 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 100px;">
+          <h3>Try Bidbar for free</h3>
+          <div class="download-button-container justify-content-center">
+            <a class="button download-button gradient-button" href="/download"
+              onclick="trackDownload('blog-page');">Download Now</a>
+          </div>
+          <p class="free-trial-text text-auto">7-day free trial</p>
+        </div>
+        <div class="column col-lg-6 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 80px;">
+          <h3 style="margin-bottom: 30px;">Purchase for $10</h3>
+          <a style="line-height: 56px !important;" class="gumroad-button" href="https://gum.co/bidbar?wanted=true"
+            target="_blank">Purchase license key</a>
+          <p class="free-trial-text text-auto gumroad-text">Pay once, use Bidbar forever</p>
+        </div>
+      </div>
+    </div>
+    <a id="creator" href="https://www.alanbi.com">Made by Alan Bi (@alankbi)</a>
+    <a id="feedback" href="https://alanbi.typeform.com/to/nl719i">Submit Feedback</a>
+    <a id="twitter" href="https://twitter.com/getbidbar"><img src="../assets/twitter.png" alt="Twitter" width="32px"></a>
+    <a id="blog" href="/blog/">Blog</a>
+  </body>
+</html>
