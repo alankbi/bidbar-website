@@ -72,6 +72,16 @@
   transform: translate(-50%, -50%); 
 }
 
+.post-img {
+  width: 80%;
+  text-align: center;
+}
+
+.post-content-img {
+  display: block;
+  margin: 20px auto 40px;
+}
+
 .blog-left {
   width: 30%;
   position: relative;
@@ -90,6 +100,12 @@
   margin-bottom: 10px;
 }
 
+.post-header {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 50px;
+}
+
 .blog-text-body {
   font-size: large;
 }
@@ -98,10 +114,6 @@
   width: 70%;
   margin: 100px auto;
   font-size: large;
-}
-
-.blog-content br {
-  /* line-height: 60px; */
 }
 
 .blog-content h2 {
